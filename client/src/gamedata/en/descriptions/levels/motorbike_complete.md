@@ -7,3 +7,4 @@ This was a slightly simplified version of what has really been discovered after 
 Takeways: never leaves implementation contracts uninitialized ;) 
 
 If you're interested in what happened, read more [here](https://forum.openzeppelin.com/t/uupsupgradeable-vulnerability-post-mortem/15680).
+That was a very difficult level! The flag for this level is `always-initialize`.

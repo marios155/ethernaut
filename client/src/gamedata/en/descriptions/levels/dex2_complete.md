@@ -7,3 +7,5 @@ Some tokens deviate from the ERC20 spec by not returning a boolean value from th
 Other ERC20 tokens, especially those designed by adversaries could behave more maliciously.
 
 If you design a DEX where anyone could list their own tokens without the permission of a central authority, then the correctness of the DEX could depend on the interaction of the DEX contract and the token contracts being traded.
+
+Hopefully, this level has piqued your iterest into how smart contract interaction can be exploited. Your flag is `TheRabbitHoleGoesDownAndDown`.

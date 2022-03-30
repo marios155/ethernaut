@@ -13,3 +13,5 @@ contract Rubixi {
 ```
 
 This allowed the attacker to call the old constructor and claim ownership of the contract, and steal some funds. Yep. Big mistakes can be made in smartcontractland.
+
+However, by solving this level you learned about the importance of ownership protection. Well done! Your flag is `ThereCanBeOnlyOne`.

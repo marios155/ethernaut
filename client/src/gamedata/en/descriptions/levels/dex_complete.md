@@ -1,3 +1,5 @@
+You have completed this level! This is a more practical, hands-on view of the `Create an ERC20 Token` challenge, and hopefully helps to highlight the nuances of tokens. Your flag is `tokens-are-nuanced`.
+
 The integer math portion aside, getting prices or any sort of data from any single source is a massive attack vector in smart contracts. 
 
 You can clearly see from this example, that someone with a lot of capital could manipulate the price in one fell swoop, and cause any applications relying on it to use the the wrong price.

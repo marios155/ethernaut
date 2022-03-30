@@ -1,3 +1,5 @@
+Well done! Another level complete! Your flag is `delegation-is-dangerous`.
+
 Usage of `delegatecall` is particularly risky and has been used as an attack vector on multiple historic hacks. With it, your contract is practically saying "here, -other contract- or -other library-, do whatever you want with my state". Delegates have complete access to your contract's state. The `delegatecall` function is a powerful feature, but a dangerous one, and must be used with extreme care.
 
 

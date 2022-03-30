@@ -10,3 +10,4 @@ Typically one should follow the [checks-effects-interactions](http://solidity.re
 at the time of the `CALL`.  Thus, depending on how much gas is required to
 complete a transaction, a transaction of sufficiently high gas (i.e. one such
 that 1/64 of the gas is capable of completing the remaining opcodes in the parent call) can be used to mitigate this particular attack.
+The flag for this level is `GasMakesTheWorldGoRound`.
