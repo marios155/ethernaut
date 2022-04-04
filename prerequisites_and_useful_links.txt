@@ -1,0 +1,19 @@
+To compile, deploy and run the contracts you will need at least NodeJS and yarn:
+
+(npm ubuntu 20.04) https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04
+(npm macOS m1 -UNTESTED) https://justinwride.medium.com/install-node-and-npm-natively-on-apple-silicon-mac-m1-7432c826389b
+(yarn install ubuntu 20.04) https://linuxize.com/post/how-to-install-yarn-on-ubuntu-20-04/
+(yarn install macOS m1 - UNTESTED) https://www.codegrepper.com/code-examples/shell/install+yarn+globally+m1+brew
+
+It is not a bad idea to install ganache, especially if you wish to experiment with the private blockchain.
+
+(link to install ganache on ubuntu 20.04) https://ethereum.stackexchange.com/questions/109847/how-to-install-ganache-ui-on-ubuntu-20-04-lts
+(link to install ganache on macos m1 - UNTESTED) https://trufflesuite.com/docs/ganache/quickstart.html
+
+IMPORTANT NOTICE: when following the steps to run the wargame locally, IT IS IMPORTANT to run Step 2 on a SEPARATE TERMINAL. Step 2 sets up the private blockchain, the application CANNOT BE DEPLOYED without it. This is irrelevant if the application runs on Rinkeby or Ropsten.
+
+When deploying locally, you may run into issues. The most important issue occurs after importing a private key through the rpc network (provided by running "yarn network"), executing a challenge and closing the entire application (terminating the rpc blockchain and the application). After restarting and using the same address, you may receive "Nonce Too High" error when running a transaction, making it impossible to receive new instances.. The way to fix this is to reset your MetaMask account. Details can be found here:
+
+https://medium.com/@thelasthash/solved-nonce-too-high-error-with-metamask-and-hardhat-adc66f092cd
+
+This was tested for MetaMask on Brave and worked fine.

@@ -1,0 +1,20 @@
+In order to select a subset of the available contracts, you should edit the following files:
+
+deploy.local.js AND/OR deploy.rinkeby.js AND/OR deploy.ropsetn.js
+gamedata.js
+
+which can be found in /<ethernaut-dir>/ethernaut/client/src/gamedata.
+
+The first three files number the ids of the contracts, which can be deployed locally either on a private blockchain, on Ropsten or on Rinkeby. To see to which contract each id corresponds, go to:
+
+gamedata.js
+
+Editing this file is important, as the ids on the deployment file MUST MATCH the descriptions of the gamedata.js file. Also, on gamedata.js, ORDER IS IMPORTANT. So, if you want to modify the order in which the contracts are displayed, simply change the order in which the descriptions are written in gamedata.js. DO NOT MODIFY the "deployId" field, but move the entire element (enclosed in "{" and "}") up or down accordingly.
+
+To add to the pages that appear upon level completion (for example, to reveal a flag for a CTF), go to /<ethernaut-dir>ethernaut/client/src/gamedata/<deployment-language>/descriptions/levels and modify the 
+
+<contract-name>_complete.md
+
+file corresponding to each contract. So for instance, to modify the contract "Motorbike", we will modify:
+
+motorbike_complete.md

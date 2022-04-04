@@ -8,6 +8,7 @@
     ]
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001325",
     "ganache-cli": "^6.1.8",
     "highlight.js": "^10.7.2"
   },
